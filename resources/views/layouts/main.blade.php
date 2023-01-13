@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ Vite::asset('resources/assets/images/favicon.ico')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ Vite::asset('resources/img/favicon.ico')}}" type="image/x-icon">
 
-    <title>DC Comics | Homepage</title>
+    <title>DC Comics | @yield('page-title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,7 +19,11 @@
 </head>
 
 <body>
-
+    @include('partials.header')
+        <main>
+            @yield('page-content')
+        </main>
+    @include('partials.footer')
 </body>
 
 </html>
