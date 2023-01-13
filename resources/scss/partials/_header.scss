@@ -1,0 +1,22 @@
+.header-top {
+    background-color: var(--primary-color);
+    color: var(--first-text-color);
+    font-size: .875rem;
+    font-weight: 700;
+    padding: .1875rem 0;
+
+    .ms-dropdown {
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        font-weight: inherit;
+        line-height: normal;
+        font-size: .75rem;
+    }
+}
+.header-bottom {
+    padding: 1.125rem 0;
+    img {
+        max-width: 5rem;
+    }
+}
