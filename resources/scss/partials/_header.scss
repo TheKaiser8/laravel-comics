@@ -8,6 +8,8 @@
     .ms-dropdown {
         background-color: transparent;
         border: none;
+    }
+    .secondary-dropdown {
         color: inherit;
         font-weight: inherit;
         line-height: normal;
@@ -16,7 +18,50 @@
 }
 .header-bottom {
     padding: 1.125rem 0;
+
     img {
         max-width: 5rem;
+    }
+
+    .main-nav {
+        ul {
+            list-style: none;
+    
+            li {
+                &:last-child a {
+                    padding-right: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: currentColor;
+                    font-weight: 500;
+                    padding: 1rem;
+    
+                    &.active {
+                        color: var(--primary-color);
+                        position: relative;
+    
+                        &::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: -55%;
+                            left: 1rem;
+                            width: calc(100% - 2rem);
+                            height: 4px;
+                            background-color: var(--primary-color);
+                        }
+                    }
+                }
+                .ms-dropdown {
+                    background-color: transparent;
+                    border: none;
+                }
+                .primary-dropdown {
+                    color: var(--primary-color);
+                    padding: .125rem;
+                }
+            }
+        }
     }
 }
