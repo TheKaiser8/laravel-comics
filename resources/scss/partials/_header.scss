@@ -26,6 +26,7 @@
     .main-nav {
         ul {
             list-style: none;
+            margin-bottom: 0;
     
             li {
                 &:last-child a {
@@ -59,9 +60,34 @@
                 }
                 .primary-dropdown {
                     color: var(--primary-color);
-                    padding: .125rem;
+                    padding: 0;
+                }
+                .ms-dropdown-item a {
+                    padding-right: 1rem;
                 }
             }
         }
+    }
+
+    .search-bar {
+        border-bottom: 2px solid;
+        border-color: var(--primary-color);
+
+        .search-bar__input {
+            border: none;
+            text-align: right;
+            outline: none;
+            margin-right: .25rem;
+
+            &::placeholder {
+                color: inherit;
+                opacity: 1;
+            }
+        }
+
+        .search-bar__icon {
+            font-size: 1.125rem;
+        }
+        
     }
 }
