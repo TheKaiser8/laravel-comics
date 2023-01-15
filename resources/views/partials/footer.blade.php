@@ -1,4 +1,5 @@
 <footer>
+    <!-- footer-top -->
     <div id="footer-top">
         <div class="container">
             <div class="row">
@@ -50,4 +51,31 @@
             </div>
         </div>
     </div>
+
+    <!-- footer-bottom -->
+    <section id="footer-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="btn-box">
+                <button class="ms-btn ms-btn-secondary">SIGN-UP NOW!</button>
+            </div>
+            <div class="social-box">
+                <strong class="social-box__text">FOLLOW US</strong>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources\img\footer-facebook.png')}}" alt="Logo Facebook">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources\img\footer-twitter.png')}}" alt="Logo Twitter">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources\img\footer-youtube.png')}}" alt="Logo YouTube">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources\img\footer-pinterest.png')}}" alt="Logo Pinterest">
+                </a>
+                <a href="#">
+                    <img src="{{ Vite::asset('resources\img\footer-periscope.png')}}" alt="Logo Periscope">
+                </a>
+            </div>
+        </div>
+    </section>
 </footer>
