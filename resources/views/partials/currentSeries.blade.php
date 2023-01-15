@@ -6,9 +6,9 @@
             <div class="col-2">
                 <div class="ms-card">
                     <div class="box-square">
-                        <img class="img-fluid ms-img" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                        <img class="img-fluid ms-img" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                     </div>
-                    <h4 class="img-title">{{ strtoupper($comic['title']) }}</h4>
+                    <h4 class="img-title">{{ strtoupper($comic['series']) }}</h4>
                 </div>
             </div>
             @endforeach
