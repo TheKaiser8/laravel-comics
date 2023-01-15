@@ -1,0 +1,41 @@
+#current-series {
+    background-color: var(--first-bg-color);
+    padding: 3rem 0 1.25rem;
+    color: var(--first-text-color);
+    position: relative;
+
+    .section-title {
+        background-color: var(--primary-color);
+        padding: 1rem 1.5rem;
+        position: absolute;
+        top: -2.3rem;
+        z-index: 10;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .ms-card {
+        padding-bottom: 2rem;
+
+        .box-square {
+            width: 100%;
+            padding-bottom: 100%;
+            position: relative;
+    
+            .ms-img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+    
+        .img-title { 
+            font-size: 0.9rem;
+            font-weight: 400;
+            margin-top: 1.25rem;
+            overflow-wrap: break-word;
+        }
+    }
+    
+}
