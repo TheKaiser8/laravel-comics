@@ -21,7 +21,7 @@
         <img src="{{ Vite::asset('resources\img\dc-logo.png')}}" alt="DC Comics logo">
         <nav class="main-nav">
             <ul class="d-flex">
-                <li><a href="#">CHARACTERS</a></li>
+                <li><a href="/characters">CHARACTERS</a></li>
                 <li><a href="#" class="active">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
