@@ -13,6 +13,7 @@
         font-weight: bold;
         margin-bottom: 2rem;
     }
+
     .ms-card {
         padding-bottom: 2rem;
 
@@ -38,4 +39,27 @@
         }
     }
     
+    .btn-box {
+        text-align: center;
+
+        .ms-btn {
+            border: none;
+            font-size: inherit;
+            cursor: pointer;
+        }
+
+        .ms-btn-primary {
+            background-color: var(--primary-color);
+            color: inherit;
+            padding: 1rem;
+            width: 20%;
+            font-weight: bold;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: var(--first-text-color);
+                color: var(--primary-color);
+            }
+        }
+    }
 }

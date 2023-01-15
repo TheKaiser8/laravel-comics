@@ -10,9 +10,11 @@
                     </div>
                     <h4 class="img-title">{{ strtoupper($comic['title']) }}</h4>
                 </div>
-                
             </div>
             @endforeach
+            <div class="btn-box">
+                <button class="ms-btn ms-btn-primary">LOAD MORE</button>
+            </div>
         </div>
     </div>
 
