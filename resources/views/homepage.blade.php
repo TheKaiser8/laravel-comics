@@ -8,4 +8,6 @@
     @include('partials.jumbotron')
 
     @include('partials.currentSeries')
+
+    @include('partials.mainBanner')
 @endsection
