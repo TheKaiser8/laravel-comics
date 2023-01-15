@@ -5,7 +5,7 @@
 @endsection
 
 @section('page-content')
-    @include('partials.jumbotron')
+    @include('partials.main.jumbotron')
 
     <h2 class="text-center">Characters</h2>
 

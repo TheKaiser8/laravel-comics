@@ -5,9 +5,9 @@
 @endsection
 
 @section('page-content')
-    @include('partials.jumbotron')
+    @include('partials.main.jumbotron')
 
-    @include('partials.currentSeries')
+    @include('partials.main.currentSeries')
 
-    @include('partials.mainBanner')
+    @include('partials.main.mainBanner')
 @endsection
