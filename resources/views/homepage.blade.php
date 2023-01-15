@@ -5,5 +5,5 @@
 @endsection
 
 @section('page-content')
-    <h2>Main</h2>
+    @include('partials.jumbotron')
 @endsection
