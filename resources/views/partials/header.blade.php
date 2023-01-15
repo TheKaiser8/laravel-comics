@@ -18,10 +18,10 @@
     <!-- /header top -->
     <!-- header bottom -->
     <div class="header-bottom container d-flex justify-content-between align-items-center">
-        <img src="{{ Vite::asset('resources\img\dc-logo.png')}}" alt="DC Comics logo">
+        <a href="{{ route('home') }}"><img src="{{ Vite::asset('resources\img\dc-logo.png')}}" alt="DC Comics logo"></a>
         <nav class="main-nav">
             <ul class="d-flex">
-                <li><a href="/characters">CHARACTERS</a></li>
+                <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
                 <li><a href="#" class="active">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>

@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 Route::get('/characters', function () {
     return view('characters');
-})->name("charcters");
+})->name("characters");
