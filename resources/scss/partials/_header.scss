@@ -1,94 +1,103 @@
-.header-top {
-    background-color: var(--primary-color);
-    color: var(--first-text-color);
-    font-size: .875rem;
-    font-weight: 700;
-    padding: .1875rem 0;
-
-    .ms-dropdown {
-        background-color: transparent;
-        border: none;
-    }
-    .secondary-dropdown {
-        color: inherit;
-        font-weight: inherit;
-        line-height: normal;
-        font-size: .75rem;
-    }
-}
-.header-bottom {
-    padding: 1.125rem 0;
-
-    img {
-        max-width: 5rem;
-    }
-
-    .main-nav {
-        ul {
-            list-style: none;
-            margin-bottom: 0;
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    z-index: 100;
     
-            li {
-                &:last-child a {
-                    padding-right: 0;
-                }
-                a {
-                    text-decoration: none;
-                    color: currentColor;
-                    font-weight: 500;
-                    padding: 1rem;
-                    outline: none;
-    
-                    &.active {
-                        color: var(--primary-color);
-                        position: relative;
-    
-                        &::after {
-                            content: '';
-                            display: block;
-                            position: absolute;
-                            bottom: -57%;
-                            left: 1rem;
-                            width: calc(100% - 2rem);
-                            height: 4px;
-                            background-color: var(--primary-color);
+    .header-top {
+        background-color: var(--primary-color);
+        color: var(--first-text-color);
+        font-size: .875rem;
+        font-weight: 700;
+        padding: .1875rem 0;
+
+        .ms-dropdown {
+            background-color: transparent;
+            border: none;
+        }
+        .secondary-dropdown {
+            color: inherit;
+            font-weight: inherit;
+            line-height: normal;
+            font-size: .75rem;
+        }
+    }
+    .header-bottom {
+        padding: 1.125rem 0;
+
+        img {
+            max-width: 5rem;
+        }
+
+        .main-nav {
+            ul {
+                list-style: none;
+                margin-bottom: 0;
+        
+                li {
+                    &:last-child a {
+                        padding-right: 0;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: currentColor;
+                        font-weight: 500;
+                        padding: 1rem;
+                        outline: none;
+        
+                        &.active {
+                            color: var(--primary-color);
+                            position: relative;
+        
+                            &::after {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                bottom: -57%;
+                                left: 1rem;
+                                width: calc(100% - 2rem);
+                                height: 4px;
+                                background-color: var(--primary-color);
+                            }
                         }
                     }
-                }
-                .ms-dropdown {
-                    background-color: transparent;
-                    border: none;
-                }
-                .primary-dropdown {
-                    color: var(--primary-color);
-                    padding: 0;
-                }
-                .ms-dropdown-item a {
-                    padding-right: 1rem;
+                    .ms-dropdown {
+                        background-color: transparent;
+                        border: none;
+                    }
+                    .primary-dropdown {
+                        color: var(--primary-color);
+                        padding: 0;
+                    }
+                    .ms-dropdown-item a {
+                        padding-right: 1rem;
+                    }
                 }
             }
         }
-    }
 
-    .search-bar {
-        border-bottom: 2px solid;
-        border-color: var(--primary-color);
+        .search-bar {
+            border-bottom: 2px solid;
+            border-color: var(--primary-color);
 
-        .search-bar__input {
-            border: none;
-            text-align: right;
-            outline: none;
-            margin-right: .25rem;
+            .search-bar__input {
+                border: none;
+                text-align: right;
+                outline: none;
+                margin-right: .25rem;
 
-            &::placeholder {
-                color: inherit;
-                opacity: 1;
+                &::placeholder {
+                    color: inherit;
+                    opacity: 1;
+                }
             }
-        }
 
-        .search-bar__icon {
-            font-size: 1.125rem;
+            .search-bar__icon {
+                font-size: 1.125rem;
+            }
+            
         }
-        
     }
 }
